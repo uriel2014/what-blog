@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Bootstrap Blog Template</title>
+    <!-- Stylesheets to be linked and used-->
+    <link rel="stylesheet" href="./resources/reset.css" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="./resources/styles.css" type="text/css">
+  </head>
+  <body>
+
+    <!--CONTAINER ROW SECTION -->
+
+    <div class="container-fluid">
+
+      <div class="row content">
+        <!-- Split the blog into one column of 3 spaces as a sidenav and the main 9 col space for content -->
+        <div class="col-sm-3 sidenav">
+          <!-- The sidenav will incorporate the heading of the Blog Name, followed by an unordered
+          list of items, and ending with a search bar-->
+          <h4>Uriel's Blog</h4>
+          <!--Unordered list in a sidenav use nav nav-pills and nav-stacked for vertical alignment-->
+          <ul class="nav nav-pills nav-stacked">
+            <li class="active"><a href="#section1">Home</a></li>
+            <li><a href="#section2">Friends</a></li>
+            <li><a href="#section3">Family</a></li>
+            <li><a href="#section4">Photos</a></li>
+          </ul><br>
+          <div class="input-group">
+            <!-- Here we give a particular div the input-group element to notify
+            that there will be input given-->
+            <input type="text" class="form-control" placeholder="Search Blog...">
+            <!--input-group-brn class is introduced for a button to be placed next to an
+            input element-->
+            <span class="input-group-btn">
+              <button type="button" class="btn btn-default" name="button">
+                <span class="glyphicon glyphicon-search"></span>
+              </button>
+            </span>
+          </div>
+
+        </div>
+        <!--Column Space of 9 -->
+        <div class="col-sm-9">
+          <!--Doing a post with labels and icons -->
+          <h4><small>RECENT POSTS</small></h4>
+          <hr>
+          <h2>I Love Food</h2>
+          <h5><span class="glyphicon glyphicon-time"></span> Post by Yuri Yuri, Dec 22, 2017.</h5>
+          <h5><span class="label label-danger"> Food</span> <span class="label label-primary">Drinks</span></h5><br>
+          <p>Food is my passion. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat
+            cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum consectetur adipiscing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+            minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.</p>
+            <br><br>
+
+            <!--Another Post -->
+            <h4><small>RECENT POSTS</small></h4>
+            <hr>
+            <h2>Officially Blogging</h2>
+            <h5> <span class="glyphicon glyphicon-time"></span> Post by Aqualicious, Jan 3, 2018.</h5>
+            <h5> <span class="label label-success">Lorem</span></h5><br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat
+              cupidatat non proident, sunt in culpa qui officia deserunt mollit
+              anim id est laborum consectetur adipiscing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+              minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+              aliquip ex ea commodo consequat.</p>
+            <hr>
+
+            <!--A comment section -->
+            <h4>Leave a Comment:</h4>
+            <!-- We will incorporate a form element, a submit button and text area for user to type.
+            we give the div a subsection of form, the class of form-group. We give the area of text the class of form-control.
+            -->
+            <form role="form">
+              <div class="form-group">
+                <textarea name="textarea" class="form-control" rows="4" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-success" name="button">Submit</button>
+            </form>
+            <br><br>
+
+            <!--Commented Section, comments from others-->
+            <p><span class="badge">2</span> Comments:</p><br>
+            <!-- Adding a badge to reflect number of comments -->
+            <!--Rows of comments -->
+            <div class="row">
+              <div class="col-sm-2 text-center">
+                <img src="./resources/tepig.png" class="img-circle" height="65" width="65" alt="Image">
+              </div>
+              <div class="col-sm-10">
+                <h4>Tepig <small> Sep 29, 2018, 9:12 PM</small></h4>
+                <p>Keep up the GREAT work! I am cheering for you!!
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                  sed do eiusmod tempor incididunt ut labore et dolore magna
+                  aliqua.</p>
+                  <br>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-2 text-center">
+                <img src="./resources/snivy.jpg" class="img-circle" height="65" width="65" alt="Image">
+              </div>
+              <div class="col-sm-10">
+                <h4>Snivy <small> Sep 29, 2018, 9:10 PM</small></h4>
+                <p>I am so happy for you man! Finally. I am looking forward to
+                  read about your trendy life. Lorem ipsum dolor sit amet,
+                  consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                  ut labore et dolore magna aliqua.</p>
+                  <br>
+                  <p><span class="badge">5</span> Comment:</p><br>
+                  <!--Input a row inside another row to show nesting -->
+                  <div class="row">
+                    <div class="col-sm-2 text-center">
+                      <img src="./resources/snivy.jpg" class="img-circle" height="65" width="65" alt="Image">
+                    </div>
+                    <div class="col-xs-10">
+                      <h4>Nested Bro <small>Sep 25, 2018, 8:28 PM</small></h4>
+                      <p>Me too! WOW!</p>
+                      <br>
+                    </div>
+                  </div>
+              </div>
+            </div>
+
+        </div>
+
+      </div>
+<!--End of the main row-->
+    </div>
+
+
+    <!--FOOTER SECTION -->
+
+    <footer>
+      <p> &copy; Basic Blog Enterprises and Fun </p>
+    </footer>
+
+    <!--Scripts to use-->
+    <!--Main Jquery Script -->
+     <script src="https://code.jquery.com/jquery-3.3.1.js"
+         integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+         crossorigin="anonymous"></script>
+         <!-- Bootstrap scripts for jquery and Javascript -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  </body>
+</html>
